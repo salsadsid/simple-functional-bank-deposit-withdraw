@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="md:w-3/4 w-11/12 mx-auto">
+        <header class="md:mt-16 mt-8">
+            <h1 class="text-4xl md:text-5xl text-center font-bold">Login to |Matir<span class="text-orange-500">
+                    Bank|</span></h1>
+        </header>
+        <section class="mt-12 md:w-2/4 w-11/12 mx-auto">
+            <div class="bg-green-300 p-8  rounded">
+                <p class="md:text-3xl text-lg font-bold mb-3">Enter <span class=" text-orange-500">PIN-1</span></p>
+                <input type="text" class="block md:w-3/4 w-11/12 p-3 border-2 border-green-600 rounded"
+                    placeholder="Enter PIN" id="pin-one">
+                <p class="md:text-3xl text-lg font-bold my-3">Enter <span class=" text-orange-500">PIN-2</span></p>
+                <input type="text" class="block md:w-3/4 w-11/12 p-3 border-2 border-green-600 rounded"
+                    placeholder="Enter PIN" id="pin-two">
+                <button class="bg-yellow-600 p-3 text-white mt-5 font-medium text-xl rounded"
+                    id="submit-button">Submit</button> <span id="alert-wrong-pin"
+                    style="font-size: 20px;color:rgb(214, 29, 16);"></span>
+            </div>
+        </section>
+        <section class="bg-blue-400 p-4 mt-4 rounded mt-12 md:w-2/4 w-11/12 mx-auto">
+
+            <button class="bg-yellow-600 p-3 text-white font-medium text-xl rounded" id="showpins-button">SHOW
+                PINS</button>
+            <span id="show-pins" style="font-size: 15px;color:rgb(214, 29, 16);"></span>
+
+        </section>
+        <footer>
+            <p class="text-center text-sm">Copyright &copy; github.com/salsadsid</p>
+        </footer>
+    </main>
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>

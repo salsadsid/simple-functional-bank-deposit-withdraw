@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="md:w-3/4 w-11/12 mx-auto">
+        <header class="md:mt-16 mt-8">
+            <h1 class="text-5xl text-center font-bold">Matir <span class="text-orange-500">Bank</span></h1>
+        </header>
+        <section class="mt-8">
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-4">
+                <div class="bg-orange-300 p-5 text-white rounded">
+                    <h4 class="text-3xl">Deposit</h4>
+                    <h3 class="text-5xl">$<span id="current-deposit">00</span></h3>
+                </div>
+                <div class="bg-blue-300 p-5 text-white rounded">
+                    <h4 class="text-3xl">Withdraw</h4>
+                    <h3 class="text-5xl">$<span id="current-withdraw">00</span></h3>
+                </div>
+                <div class="bg-rose-300 p-5 text-white rounded">
+                    <h4 class="text-3xl">Account Balance</h4>
+                    <h3 class="text-5xl">$<span id="account-balance">999</span></h3>
+                </div>
+            </div>
+        </section>
+        <section class="mt-8">
+            <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
+                <div class="bg-green-400 p-10 rounded">
+                    <input type="text" class="block w-3/4 p-3 border-2 border-green-600 rounded"
+                        placeholder="$ Enter Amount" id="deposit-input">
+                    <br>
+                    <p id="alert-deposit">----</p>
+                    <button class="bg-yellow-600 p-3 text-white mt-5 font-medium text-xl rounded"
+                        id="deposit-button">Deposit</button>
+                </div>
+                <div class="bg-blue-400 p-10 rounded">
+                    <input type="text" class="block w-3/4 p-3 border-2 border-blue-600 rounded"
+                        placeholder="$ Enter Amount" id="withdraw-input">
+                    <br>
+                    <p id="alert-withdraw">----</p>
+                    <button class="bg-yellow-600 p-3 text-white mt-5 font-medium text-xl rounded"
+                        id="withdraw-button">Withdraw</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p class="text-center text-sm">Copyright &copy; github.com/salsadsid</p>
+        </footer>
+    </main>
+    <script src="js/banking.js"></script>
+</body>
+
+</html>
